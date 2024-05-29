@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'WickedSeventies';
+    src: url('WickedSeventies.ttf') format('truetype'); 
+  
+     font-family: 'Helgoland'; 
+     src: url('Helgoland.ttf') format('truetype'); 
+     font-family: 'TROGLOP_'; 
+     src: url('TROGLOP_.ttf') format('truetype'); 
+}
+
+:root{
+    --bg: #24327d;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+
+    min-height: 100px;
+}
+
+.hero::before{
+    content:'' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(img/popteen3.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero{
+    min-height: 100vh;
+    
+}
+
+.hero h1, .hero h4, .hero p{
+    font-family: 'Helgoland';
+    font-size: 10rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+    margin-top: 1rem;
+}
+
+.hero h1{
+    font-family: 'WickedSeventies';
+    font-size: 5rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.4rem;
+}
+
+.hero a{
+    color: #fe77de;
+    background-color: #ffffff;
+}
+
+.hero a:hover{
+    color: #ffffff;
+    background-color: #fe77de;
+}
+
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-size: 3.2rem;
+}
+
+.mynavbar .nav-link{
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.home{
+    background-image: url(img/coba1.png);    
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6.4rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+
+
+.home p{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.gallery h2{
+    font-family: 'Helgoland';
+    font-size: 4.5rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+
+.gallery p{
+    font-family: 'TROGLOP_';
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+
+
+.home p{
+    font-family: 'TROGLOP_';
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+.home h1{
+    font-family: 'WickedSeventies';
+    font-size: 4.5rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+.home h3{
+    font-family: 'Helgoland';
+    font-size: 3rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+
+.info h2{
+    font-family: 'Helgoland';
+    font-size: 5rem;
+    color: whitesmoke;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px  #fb33cb;
+}
+
+.home .wonyoung{
+    margin-top: 20px;
+}
+
+.home .wonyoung img{
+    
+    width: 30%;
+}
+
+.info{
+    background-image: url(img/wk.jpeg);
+    color: white;
+    min-height: 150vh;
+    margin-top: -1rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.info alamat{
+    font-size: 1.5rem;
+}
+
+.info a{
+    color: #fac3ec;
+    background-color: #ffffff ;
+    box-shadow: var(--shadow);
+    margin-top: 1.5rem;
+}
+
+.info p{
+    margin-top: 1.5rem;
+    font-family: 'TROGLOP_';
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 100rem;
+    text-shadow: 0 2px 2px #fb33cb ;
+}
+.info a:hover{
+    background-color:  #fac3ec;
+    color: #ffffff;
+}
+
+.info .card{
+    background-color: rgba(255, 255, 255, 0.3)!important;
+    color: white !important;
+    border: 1px solid #999;
+    margin-top: 1.5rem;
+    
+}
+
+.info .card-header{
+    border-bottom:1px solid #999 ;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body{
+    font-size: 1rem;
+}
+
+.info .card-footer{
+    border-top:1px solid #999 ;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.gallery{
+    background-image: url(img/last.png);
+    color: white;
+    min-height: 100vh;
+    margin-top: -6.5rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.gallery span{
+    text-transform: uppercase;
+    
+}
+
+    
+
+
+/* Media Query  */
+/* laptop */
+@media (max-width: 992px) {
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section{
+        padding: 70px;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html{
+        font-size: 65%;
+    }
+
+    .sticky-top{
+        overflow: hidden;
+    }
+    .simply-countdown>.simply-section{
+        padding: 60;
+        margin: 5;
+    }
+}
+/* mobile phone */
+@media (max-width: 576px) {
+    html{
+        font-size: 60%;
+    }
+    .simply-countdown>.simply-section{
+     padding: 45;
+     margin: 3;   
+    }
+}
